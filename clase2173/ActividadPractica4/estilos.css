@@ -1,0 +1,83 @@
+header {
+    background-color: black;
+}
+
+.nav {
+    
+    padding: 10px;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+    text-decoration-color: white;
+    background-color: gray;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.icono {
+    background-color: black;
+    
+}
+#boton-receta {
+    margin-left: 40px;
+}
+
+#titulo {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+span{
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 25px;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 15;
+    margin: 25px;
+}
+
+footer{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+#contactos{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+td{
+    text-align: center;
+}
+
+.sucursales{
+    background-color: white;
+    color: steelblue;
+}
+
+iframe {
+    margin: 5px;
+}
+#piedepagina{
+    margin-bottom: 1px;
+}
+p {
+    font-weight: bold
+}

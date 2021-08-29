@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas y Tablas</title>
+</head>
+<style>
+#titulo {
+    font-size: 40px;
+    color: red;
+    text-align: center;
+    background-color: orange;
+}
+h2 {
+    font-size: 25px;
+    font-style: italic;
+}
+h3 {
+    font-size: 15;
+}
+footer{
+    background-color: orange;
+}
+#piedepagina{
+    color: steelblue;
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bold;
+}
+#contactos{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+</style>
+
+<body>
+<header style="background-color: orange;">
+<nav>
+ <a style="background-color: chocolate;" href="#">Inicio</a>     <a style="background-color: chocolate;" href="#">Acerca de</a>      <a style="background-color: chocolate;" href="#contactos">Contactos</a>
+        <p id="titulo">Rotiseria "El Super Pollo"</p>
+</nav>
+</header>
+<!--<iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20210819/r20190131/zrt_lookup.html" style="display: none;"></iframe>-->
+<menu>
+<h2>Pollo al Spiedo</h2>
+<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxQTEhUTExMVFRUXGBgXGRcYGRoaGBgaGRcdGhsdFRcYHSggGholHRcXIzIiJSkrLi8uGCAzODMtNygtLisBCgoKDg0OGxAQGy8mICUtNS8wMi8rLy8tNS8tLS0tLy0tLy0tLS0tLy8tLS0tLS01LS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYDBAcCAQj/xABBEAABAwIEAwUGBQIEBAcAAAABAAIRAyEEBRIxQVFhBhMicYEHMkKRobEUUsHR8CPhFWJy8YKSosIWMzVTg7LD/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQIBBv/EADQRAAEDAgQEBQMEAgIDAAAAAAEAAhEDIQQSMUFRYXHwIoGRobETwdEFFOHxIzJC8jOCkv/aAAwDAQACEQMRAD8A7iiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIi8PcAJJgDitfD4+m/3HB1pkbR5rkuaLEr0NJEgLbREXS8REWGtiGt95wHmQPuhMaosyKOdmQ4X8r/ayx/jCQYeeMWAnykSoDiGzAv33pKlFFylUVPxOPxAd4XiJImYBjcCRffdbFHPKjI1gPHQ+IfQA/JVB+p0wSHtcOcW9iT7KwcC+AQQfNWhFr4bEtqND2GQf5B5FbC0QQRI0VMggwUREXq8REREREREREREREREREREREREREREREUL2qzP8Nh3VJAuBJ69fRcVHhjS47Lumw1HhjdSYUJ22q4mpUo0cM5oaSe9c73ALWdbe2wvfotWrn4w5FOvUpiG2dTIDRAjiB9lE1e2QdRc8Pa17obTD7BwmJ1G8HpKrHaDJMVmLaFSjTmrDmvDSA0AOLWkbQPCTe/iWM5/1X2tJv6WBE6d2K3qWHy0w14EDyvuZPp5K51PaNh6ZkVg8n4QIH/EbrVr+2HDgGJLujbDyJdf5BUyh7Hsd8QpgT/7gkfKyueU+y6m1gbVoUSR8QcfF52sp3CrTEDOekfe/wA+SjyYSMzi3/6k+gIVczL2j4iu+KNZ9Fp4mBHoJ+68YSlVbqc7MG1e8u5rjU8VtjqaJ8pU1juw9Sm8ilR8Ey24J9NN1tYf2cVXgGpVbT/0+JwHI7D5SqmSrVcWhh/9tfU/E9AtD6uHpUwRUaByA9wASfz0UFi+09ai1rmsrBkkAt1af+Y+vEqJqdt6ukgzJMzxnhvw3+amc67GYfDUy04ioXaj4LanNtpcbeAkkDxWJ2KqP+GTuXaeF2zHXrvtyXP0adPwvFxz/lW8O36jc9NoPMj7nXqrPlXaarUIcJ0w1pDwHTp/Law6dFPYLMab3Bhdpe0iA0k73kgC3G/JUOq2tRA7mm0sED3jPG5ETNzsYuBFr3LseaZAqsp1GlzoENdG3iAcR44vcesKJ9AuOZlxyvHXfbzXlZzGs8Qg9Ik/Hz5K69ng6m4kk6XugyRG0AjrMq2qjZJjWvLqUkFjrt2sTuBvy3Vxwr5b1FitL9MqHJkPfH8jzK+Y/UWOFSXa/bb2WwiItVZ6IiIiIiIiIiIiIiIiIiIiIiIiIiIiKH7S5K3F0DRc4tBMyINwCBIPC8+imFhrVg0SfTYTaePQFcua1wh2i6Y9zHBzDcaLjeL7Ju/FUqPcUu6awtcQ8aw6HGWAgmBA35nkrh7PmnU4h0sDIEjxE6rkkW3Djad1uYiiGB7m2cQ4OIvOoglwcRwgCSIvEWgwPZqv+GYCZu1wsRIl2ozO8AHlusd1RtGswO719d/bTfcg1qDwOUff7Qr9isa1lpaCOc/QAST5KvZn2hd4adEOq1XEENbLLC5N76RbeJmyreKzavWfUdTY8sFtQc20gTruJ4mG8ljy3tAAdTiWho8LhEkN21gC5va448ivKmNdUdDTDePG+21hJk/C7w/6ZlGZwzERadyLaX8hsD5XXCYqppBrVGU3bFrYe+ZvJMgeQECdzErQzLNH0Xai59ZobUllNsO8ABHjnQ2zhqkg7QBJC8ZdnzMRpilDQS4au7cSYIZLblsnUeBsLwYTMWVC7ZlOm59Jg8Zio4+IyNB1bAGYs3orhc4M8Jn14ensoGUIqxUAHLw8Ytvz1J0vuqzmtatVqzXqUMI1rSe6c/VVcNLXaXyIAs0Fxd04QoDE4Wg+WRUbiKj3FoaH02U2NAMu71oLWk6xtPhG2xm8/wARh31sR3kmnUYHtfTeQ3U0Q2QXBrwXSQL72K9VcVXdTY2nX7sVKWnVXDQ4SHDvAWjw+tzpnioXPpZvHxideV7225CfXUYa1OmDStYGNBcTbUm8gyZMXNyuf5zhq1Ov+HpOFQPl9PS3XqaRqFhJ1XjTJhe8pz+pTLHNqVGHcyLXO88PTktzBsDO9ZVYRiS+n3c2YWhwD6jJguPu7GTMjivj2U31agZZrHOAeY0mNRBbIAg6XQIuFw9sNDw23Ed/0r1DENqPdTc+docLWjQSRfh5RurD/wCI3nUS9jzSkTDdUNPw1IFi6LuMRy3ViodrgGtqElswHaRq0ki5dpmBIib7rmea0X6muq+Jr4nwy1zAZgQAGjcW6rP2dquEuo1CBqu1xMECIJEn78VSewNH1GOOvd9uvrMJiMAyq3KQAYsRpz2HLWLk66roWJ7dvpOBJ103HwlhYfP4hPlv0Urgu3AqM1U2udvIfTqMPo4thV17aVZpc6nSebeGoLg8bi4PXl9MGDp06Zd3Zdh6nJtQaf8AlqkA/VctxtQf8j7HfqvnamBDLPB9Ff8AAdqab9IfpYXbAOBnnCkxmrCYB9ZCouBxlgMQGVbzqaIg8JYT9QVbsuzOmGgEgt4O3+fFaFDFufY1B1j5uPgKlUw0XaJU2Cvq8U3giQZC9rXVJERERERERERERERERERYMRW0jmeS8JgSV6BNgvuIxDWAucbAT1+SgGY11UOe5paBMSAQ2IMOIPEj+4MKF7R9ond53FHxVd3ncUxvc84+Sj8gxrdLmkt97SDqOo6iBOk2MC82O3KVm18WM4btfvvzWthsCTTL97eh8/ypevmjS11F0OfUaNLACIaZO5HiMcW+kBV+uCwNg3kOAB3jhESDw6qdruBFQwwu1bOPuNjREgGCG2gc79a9mNR3ft1avFfbwzJ9wyRp2Hp1gZGLBdFSZI+Jnnf+tRfXwtMGWtEbnrG3KOV9d7TGbYgtwjmtYG94CA8WhxG1QXgkSP2VBybF904squinTHjAAOp943EAiXDVBImy6Dg8PRqTqAFTTcmPFvBv70QDZUP2hZf+HJdTI7t0F2/jJ+Fp4wN+A9VZNT6rmlhlpEDl3ccjYr3AvZTD6bxB1+Ox8BTzu0lQU7vdTbAhjXtGqRJ7x7ryZ38Pm7ZRmI7SNbTpk95iHw5/dd6Za1w7qJaPC252Em1xeOeszV7mCnJh7hInwwOJHQLJgs07ur37Q3XDWw6S0w0NnfmJja20WVxlMg+JdVMgb/i31225Xm41J5nRXvB1KGJrAV3BtSoWjRTYSxrGgtIZu+o+5cX7NLASbGNjF4ujXFM0nai6o+3GnRpt0sNSNUAEAl/5Q27ZtRMmz40agOhndAAVGgAd7E+890k3MkTEcIW1l9fDUm1af4h472ztFO7mAggAueNGogG4NjBCnNMPblOiqis+nUL23NgBNo34crTsBJVtzTtDhn0KILRUc8FzzZsPFgA0y4kbl3EkX5QDcDSc1uqpUpFrSwB8aA0yQ2LOFj70zc8CoXDUQKjGuDKlNz2anatMgEgt17Na6dyOA2V0yzDurYyXVKFNgIL+6EU2sa/3WlpAcdvdJjSLkyqhpGCaRibWWgDSbas3SXTrzsL25AAaA8VlynAVajgwMpmi9rGuDXxamCARrkidQcbXJMQtw9mmYXS7VpLjOjSB4htOo6uO0KR7S/06b8Q1z6Tg7+m2mbMAeGEQwDhEkk3JgrFkdGkHioAHPsXh2qSCLlkWJAB3HqJUFdkeB5ud5t6brxlcmn9VphukATJA3doJsJ46jQr02gQNUtD2gvHhMPBNwYGxj7XTMAHM8bSWOkcQ4XMWFwDfnC2aL9L6jSS0an6HyfEC+WjVcHbYzxkLbcDUJe4aT7mhwIBaIttabkFZRpFkzqD0PWZ04W30g3ie/wAXiEju1h/1Niqo7CVabR3Z72jGoMqQ4tHNlUi3D3h6hZMHnNWniQ2u3QKrQKeq2l0xeCbOEeoKnquUsZpaS51MhzT8Wl5uNTvyEgkG/FVP2k5SRTp1LCnTiC3a1r6hz/m6s0RmfDt7Tab8I0Ol/QrhtKg423B5fJ13jT5XQcHnJpVBTcdDnbNPuu8v8yteCxram1jxH7Ll/ZfNaWOo6KgBewAGd5jcfJTuGe+g9rXEkfC/iOjv3V7D4h9Dw6gbFZmJwYJyn/bjxV/RaGX48PsT4vut9bbHte3M1YzmlphyIiLtcoiIiIiIiLHVqaRKqvafOO6bpYQaz5DASABwLiCbgSLeSmMbiZcRMAW8zx/ZcK7R1f8AE8zZQY4hpdEkW7lk6tJ5khx9RyVSu/N4QruHp5fEV0XD5Y3C4aq73qjmuc95u4k7wfVc7wWZuFWebuHvT0+Qj+66tmmHL6L2C50OAExNrXO64diq0P2Nz9/59Vmvpy4Dl919J+l1QA/Nv+F06jm8OMOGh7QfBAE3OlxkTx5C/RMNWFUHxOcAHeItaDJdqF9yYPHeeiotAljYLrSZ6jhuOZW1lOKNK7pcHA6QJm1oAMCLja/JVS0xHp37q6cPTIlhv5c/srnQxLy4Un3dHgdaCJkgEkcxt/tgz+Hh27g0SG63tbYwNRA8YLiBEjcc19pYhlZgdLAWwXA6gADMmC6C7hIAvZZalAAQZjSAQTcQdyefu2B2lQgCi5rvfuY78qj2tBiI2I+dPtHHQrkWa5hUqOLe7p0wLPdSptYHeKfGWAAiY5Cy1qlNhiDp6ggfSd/nsrhneGqvFYktFPwtEw4uNNpDA4+8CT8Ux4jMqj0ImCTHS3GeG+wW+12YArONPJ4Qt6vgy2m+oadUm2k6mt0zYOfTguidjaT5FRDHuFxxtcTJPnxU3TrFkixFyQ5t33BIeWwTsInqRF1ixD3BpYyKbXDU4tjxAiI1e+Wn8sxc2XbXDgvH0z/tmvw09Fgw+JbIkaXA7ESDB2IPDoVLsxb2vJ7tpkWmIFwdVOB4b/lI4cLGIwWDYW6i8tcN5bqaAdjLXS2IO49VKUs5l+og1ni06QyZGmSJMuMAzY73BgiOozcKxhcSJyvmfx5Hr5K09ncd33eU8SSym1j6oDfC0vDYaAHSZJPC5JG6umS4RtNjHvLnvdoGx0ggNGlpPxANMnmLWCoGXTiauoNJc4f6YOmTrO3O/GFeez1Zz2MY+fA9z/EJLvDAvwG5Pp1WPWq5RcDTfj91p4xsU5DrWkd3udeNuCmcwwfetFvE13MSLcA4gQZg38luie7cHEyHd31PIfKYPRe3Yg6IDbE3Lbg+fXZR2cUXd0NAJdqaeEgB0mOdr87Lg1QamVkk5ddNrCOImx/sYDPHlpugCbcuPkp4YdnBoMDy5WP3Udm+VsrUqlJwBa8EFruI6ct91jweJqscA9jQyLkGdoG/T9VkxGMtBBid7yOFuXl1U1SpSi4g9I7soW06jXWM+c93XF8kwz8tzIUajrGGhw4tc4QT0kQV2LDv1Wt6/b9FzT2yMa0YesI1anAH4i0Qfv8Ade8p9pAZhwKgL6jQAOZG0OPE9VM8OqtFS5m1uX5EdPdXYFQZREjiePXgZsr9l9dzHmm6xBJZ5bx6K5YDFd43qN1ScNXFegyuGlrnAOHPopbKcXBa4cdx9wV3hq/0n8iqeKoZ28wrWi+Ar6ttY6IiIiLBi62hjnch9dh9VnUT2hr6abRvqeBHkCfuAuXuytJXbG5nAKC7Q4vucNVqTcMN+rrT8zwVc7I4zC1KLMRSDWwDT1kAOsRI5wSQpDtcHOwxGqJcwQII94WM7qidnextQ02ivDKtDECs2ANhENsIglsrKqFoknvX+FrMDot3p/K6QcQ986WwPzOt8lyPNsJ3eIeCdWh8cJsSZjyM+quuW9qnVcJXxRpeOiXg0tcnw3jVp334cFEVK7MXRZiHs7pzxJHrG8SbCx6rl7XbC6s4as2m45jYqEr1WkAgieWx9Co7HVu7e007Rvxgm9uSk35XwDuEt5GeBB6qOxmDOkyBIMW3sOI5XkKBlRpMFawplhDmlSWUZs5ohzjckjciZm7SY62vKs2W9o5a51R0Tv4SWwdyDaNjaVSclYA/xEiBPHbzFwVbsqe1k93UbDhtwI+dxt8lXxRDbX79lPVyPbcX75Fe82/D1paKw1GHMjUHzY/GXF/KOC55m2Wmi+9wTM234xFj5iys3aPCU5J902nTcGTclp5KvsrtJ0VNTmi4c3h/wuIj+6uYeqXNzN8x9+qoVKYFp9dfb8Ba5IgbHhw9L7WMLKMCXatF3CSacgOLQSQ+nbxjeQLjrw3sLQpOaQ1zpJgN0zx3NoHzWlmWELBtdpImd9iJHkeCsMrQ7Ko3UWvE8l8ynG9y6q57ToqUn0iP9d7Tyc36LOe70ufhaekDxy9xe8NkCGgENA5yCb78FixrXV6Wtpc51MTUkXcBALtXxFsiZvpc08CVF4XElux6R+qldmIUdLIx2kHY3t6EKayrMnMdq8Jm+oDkbzzPTqF1HJcYTTo17fkdpnmYJHUWnouJ4SrpJdMEAlsjUCSIgg/ddR7H4ylWpMYQ6m4Nc0+MwYALTezRJ228I2lZ+NwzYzCx4999FbFc1mFrwTHnaDPfsuhB8aTSI0u42idxPKV6zTBNq0CwgtPNpu08CPlPrxCi8txApiAINpBnQ7p58iCpljvBvMixP2VKkRJ2kXGw6TpO8c5myyKrTTcCOOu5/pVfKcyf3NWlUd/UY8kmN78vMT6hb34/WAZOk8LEjqBzWlUouL3vi7tOvh4gANuRA+hWXEOYwC1zZvmYAkD+XUL6j5gaRH475haBaxxkC56axf8APRUL2y1hpwzCQSTUd6Q0cuv8lc1w4MgLpHb/AAgxFam0P1Ci0hxG2pxBMc9gCekcFgyxrsMzw0jVcPdawAvk7eIjwz0W1h6n0qDWAXvPmZ5qmaX+QvJttGqvXYQvGEYys1zSZgONyN5A3AUvgsQQ57RYC/Xl6cFDZTj3FrDVGl7hdsyWk2iRsUynCVKNZwqYh1aZALmgOF5iW7hVovJXTzLiY1uuj5PX1Mg7t+x2/nRSCrvZ/EjVpGxB8pH8KsS28O7NTErDxDMtQoiIplCir/ap0dzy1EechWBVrt24twwqNEmnUa75y37uCir/APjKloH/ACBQuesHcuI4Fjv+V4J+krXx2YNpVXSQNVMPnYBrbE+Q1Lya7ajC17y4OaZaN4I4nZtucGypmVsxTKlV9dznNa802vcQS2mQQWgGYGxPks57RM993WqwkiO+7LZynORiMTXo0wxjGjUHtIOuTci3XgLXWxWwzKcho1dT7t+QFz9FcezWEwzabG9xRljBTksaXQ2w8REkR1UriMvwzt6NPzDQPtCjFZmSdOI+eqjc8h0Ed+y4Z2lr1aT2vY6Y95log7bbea+Us4pOu5wa47g8eoO369OK6ZnnZTCVB7haf8rnfYyFUsR2Lw4DgC86hHi0kiPy+G0z9FC+thni5vyiVcw9eq0QNOfcjyUOCD46boIuC2Nx+i0sTiWkgvimeLm+En5Qt5vYSkJivWHkWj9Fjd7PmPB0Yqo0gEnW0OBHoRC5ZUwwN326FWDiqgEinfqP4UHic0DTDapf6Sfmos5kJWTJ6UtcAdR1ecgcull6/wAP1+8IEaidvlYrRDKbCWlQF1aqwPafL+brZy3OGsJlocDt08+Y6LezKu2rTJYA0C5ab78Qd/8AdV/FZM9o1MlzREyIieE7cFgwmOfTMEGPJdGg13jZqoxi303ZazSPhSuFzB7Xh7CAZAvEahzBtH3ErYzvLtGjEMaBSqXhpsx15aJ4SHR0C0HQ5pdwM/SFduxVBlfD1sI+fG3U0Wi72wWTcEFo6cOK80uFMTmaZOl5VLw0EnhPBW/s9TaCCCLRYHr9FVaOXlmI7moILXQ7y5t5i4K2MLinA6QSCDfnM3UGIpmoIaVo4Gu0CHb2/K7Fk+JY4ubrIaRHG08xxv8AorFTq6W6TGwggyPMeqoGQ4klg5neB95VoNXTTiYmPusAVMjy2O+HTpCr43DDPAPfFbNGv3dad9Vnelhb1hQfbB2mr75bsGhsgXtJAudPDqRyWy6uNUz4gYgRsRJP2N+armZZ3TcAwOe59MvDmkAapNnU3+8Wk6hO3hhXsOHvGWJEz0tEd/yqxim7NMEiO+91gweCbTtBO0Ax9Ys0/PdStKBYH/hYLz1cVXsdUrVKcUtLCYhvARzPNSmSYY0qLRVqFzhc9fNpufX6K2+mQ3MdeCjbUkwNFLZfTdqBENAMmLm1zLlonGF+O0tMDQ4mQfKw4qSy/Fl0kDS2Njv5k8PL9FB5M0PxVaq1j3QAwEkR+YlxmB8NgjWkC64c4Eq/5DVHe04JNyPoR8ldFS+z9Mmuza0mx6fuR9FdFqYUQyFlYoy/yRERWVWRaOcYEV6NSiTGtjmzyJFiOoMH0W8iETZFx/LMWADTIIdTJa4HcESDPWQsrwJcHARVAEH4XbNJ8/50ye0LLzhcUMU0f0q8B/JtUD/uaJHVpndauoVBuNJG88FlPYWHKewtdjg8Bw7K18szepT1MImpT+GffZI4niNvQc1bcHmrajNTZ22NiPMKj5xhHv8A6lMxWp3G8PZsbc+BHXyWs/Nh3esOLHAgETdrj6bWN/8AZVKtBjxPffH4sFMTNyrxjMWAJcQ0cyYF7Dda+XFj3OB0uEc5+o47Ll2edpq7maHu1MJB2gyDIBI6/ZYezmeuoYinV1EtEtezm128DmIB9AqjP0pzTnLp8tf5Ub8Y0DLFiNZXW8VkzCPAS0+cj91Tu3ONqYTDuAa7VUlgeAS1s8S7YG9gblXX8Y0gFpkEAgjYgiQQvD8Ta9xyMEesrjNRFQFzdNY0UuaqWEA6r88ZPijTeORt8xH2VzwTiWQeLYBHI8v2V6xXZnAVp14Wm0m+qmO7M8/DA+ij8V2CDWM/CVyHMBBbVuKniLgS5gkOg6djZo2WpUxFKvdpg81zhajqAyP02jZVjHYOzjzbHMXsY2uOXkoDH4dzCRUaDMRYRYAWjaxH1Vvx1KpQIbiqZpzs8GWOHR4sfI36KLxLGfC6bERzHI/M3XNKo6mcrx31Wi4Co2QZCrDmhsxboflY+SmMlzdtJwkEt2MGNTSLieH+yjsRRuNMzy3XnDtF2kRrtqj3DMztMWG39leyh4VPN9MyNFN9q6BbXNVtUPDg17Kk3LHTGoj4gWuaeoE7rWxLS57K7fEKlnTeKrbPBOxmzp46uixMo1w19H/zGsGsN+PS4SXUvzDZxFwYkbSJTsjgKVVhBqMaXn4pljm+4XCLUzJaSJ9/hAnxzSGrqjVGYcr9wrPkeNAaBBHSP5KsxY5zJ2mwO9j05qnZJj2uHERv0gX+qzY/tI5znMomWxGoXE9Dxj5L539u51UgC61MQ9oActjtBj3y5tItFTSWF2kf0wRwjdwvE2E3URluCqGk2m+oXaGwDGwG06d/qvFBlrzpuZ585jj+62wxxHhdPU2EbXm3pda9ICm2B6rGq+N0lbuHYKcDvNbj5QPICwW5Rd49I8R6XN+f8sodroMA6pPvGQOtm3cPopzD+BpMgQejQLfl3nzXrr3K5FhAWTMsQKOHjYmQAAST6fr/AAsmwZp0msJLjdxtYOO8t58L8ALLSwzzWf3jj4Wnw8nOn3ucDYdfK9gw7LQAb+X2XjRmNly6wurP2OpTrqHo2THmdvRWhaOU4PuqTWcd3eZ3/b0W8tem3K0BZFR2ZxKIiLtcIiIiKPzrLGYmhUoVPdeIni08HN6gwR5LjFA1MJiHYOuILNnfCQdntng6/wAo4Fd3VZ7a9lmY2kIIZXZJpVOU7tdFyw8eVjwUFejnFtVYoVvpmDoqXWeGt36zxnoqBndVtR7ntBE7wPmbE2NipVuYVcNUdh8S0tc0w4EeIW+H8zTaCN1pZlgXaR3btTJMNn9fivzWYWlpurtRrnt8Bsq1iWgtngosMJNgQPNTWPwVR4gNNrwL7czsT5KOqy2ANzE9B16qzSda2qrmi5kSLlWrsX2w7h34fEH+nP8ATqfkJ3Dv8hPyPTboTz4dQggxcXF+ULiH4eZ5qVyfPMThrUnyz8jxqZ6A7eir4nBsrXBgq7Ta9o4rqjXLaw9UjmqFR9ogAiphb86b/wBCFmPtMoj3cLU9XNHzWeP02u10gj3/AAu3Vm6ELotXMxTovqViNDWlxnaBfZfn+nmQfWe8AU2uc5waLBoJJAAHAKR7Vdsa+MAYQKdKx7tvEjbWePlYKr6VsYbC5G+MyY+/9enNVDWc18sEK1lrXi5M8xz9Vp4iiR4T5g/r5qLw1d44+UqTpl7hw8tvshpmmdbLQZWbUGkFbWX5u+lVbVAa4tEDVeBM+Hl/crOzPC9zzTosa58kwSRqM3a0mGyTcCy0XZfVMiBHORspLJMAWtJOkSYDgZJ6NAHj9PovHuaW3+V6DDpHx33Cx5fgDH9RztI3HPzA39VYKGHcWzdrY22AE85FpjafJYGNLZgajw1RAIvMAwPMkrBjziC2KQFR53NyG9QSA0eYFuihzFx275fJKjNheT3xW/QY0CZ7wnaPd/d0eRWjj81rBwayk58kAkCWjnF4nzUpgsMQxvenU+PE1sXNzDiN42uItstDOMxqPFMUGFzXnS1zb9fC3lPE+GRty9pkZ+PXsLh8ltrdFOYLD6A1wu47md+O+5+cLIKb8Q64aKY97/N0BHDnHldeciyit3bW13aiNxe/LUTc+UhWmhhABfbkLD06eQC5kusFz/qtHA4XaWtDRYNFmxEepVt7MZYHO7wtAa0+GOLv2H3WplWXd67SGw0XcRw6DqVc6FIMaGtEAWAVzD09yqWIq7BZURFdVJERERERERERERVrtj2Qo5hTAf4KrZ7uq0eJvQ/mYeLT6QbriOc5XicvqiliGwCTDxJp1RPwu58xYi3BfpNaWZ5bSxFM0q1NtRjt2uEj05HqFFUpB4U9Gu6n0X5/pYtrtoaRb/LHTmtfFZcHSYv0F/p/Arj2n9ldWlNTAu7xu/cvMPHRj9nDkHQepXOsTjq1F5pVGvpuFnMeC13qDcD7rOdhXsNlqMxLXiy+YvLw3jflxHpwUdUa68TH835LffjgRt6cPksdJgfefU/oCYXTQQLoXg6KJqNttZYQwHp9FZH4VrrNaXHaZ/gX1mTg2FvSfr8lKKkDRcxO6rbMGTsR6L3+DhTz8mA+IfW3nZeaeUAiQQAJ8RsPQm3yXn1pXgpgKDp0DNlJYOm7gLcTsPV3PoLrfbkcjcCbCd/QDf6rcoZBTHh1SR0mP2K5dUBXTbaL5htDQNRa6IgEiAeYaT4j1M25bLffi6QImXuNgBJEedh6NhZKWCosaBpJ8tzfruei38JggTq06TeS438gOH8uq5Ddb+q7znSygsXmbacageQnYcfdFp34kqwYSHtbpOoEcrH7z8z5rd/wum8Q6m14H5mgj5belz0Ulh8K1gADQOEAR6AIbjRclyrjuy5qV21XVHgM+FthzuZt1vKsOWZNRoghlMM+c+cn+dVsd6B+n9o/T5r1Te95002lzjwAk/zqV2JNlETCztcALC3K1vLgpDLMtfiHTcMBu8/ZvM/Zb+VdmjIfXP8A8Y/7iPsPmrMymAAAAANgLAK3Sw+7lUqYjZq8YbDNptDWCAP5J5lZ0RXFURERERERERERERERERERERRmc5Hh8WzRiKLKo4ahcf6XC7T5FSaImi5Dn/sVYSXYPEGmbxTqjU3yFRviA8w5UDOewuZYb38K6owfFS/qN8/B4h6gL9OouDTBUza7wvyVQzRzDpMgixaRERwIN1tDtCRbS3+cyv03mWT4fECK9ClVH+djXfKRZVjHeyvLKl/w5pnnTe9v/TOn6KE4cFTDFclxRmasJEsB6k+H0bx9Vu08zozqdLi2/kekiB9F0DGexDCkzTxOIZy1aHgf9IP1Wi/2Gcswd60QftUC4OGKk/dNKq9PNmGSRA5A/c7/AG8l8o49rnBrRpA4zsPLn5q00PYcWn/1A+lCP/1W/R9jFMe9jax/0sY391x+1Oy9/cs4qqUcXTYbRJ3JJJjr06D+62aeaMPiLxbYWvHyhXPC+yHBN9+riannUDf/AKNB+qmcH7Pcup7YVrzzqF1T5h5IXn7Rx3XhxbOBXNsPnzSYEufwaBJ9AFOYDKcbXFqBYD8VXwCOgPij0XTsHgaVIaaVNlMcmNDR8mhbKkbhB/yKidiidB37Kn5f2LFjiKms/lZ4W+pNz6QrNg8HTpN002Bo6DfzO5PmtpFZZTazQKu57nalERF2uERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERF//2Q==">
+
+<h3>Ingredientes:</h3>
+<ul>
+    <li>1 cda. manteca</li>
+    <li>2 cda. aceite</li>
+    <li>1 cda. mostaza</li>
+    <li>1/2 limón</li>
+    <li>sal a gusto</li>
+    <li>pimienta igual</li>
+    <li>3 dientes de ajo</li>
+</ul>
+
+<h3>Instrucciones de Cocción:</h3>
+<table border="1">
+    <tr>
+        <td>Paso: 1</td>
+        <td>En un bols mezclas todos los ingredientes: la manteca derrrita, el jugo del limón ( la cáscara y los ajos los reservas ?</td>
+        <td><img src="https://img-global.cpcdn.com/steps/aa5e3672ecfaaf25/160x128cq70/foto-del-paso-1-de-la-receta-pollo-al-spiedo.webp"></td>
+    </tr>
+    <tr>
+        <td>Paso: 2</td>
+        <td>Untas bien el pollo con ayuda de un pincel por toda la superficie ( colocas los ajos y la cáscara de limón adentro del pollo</td>
+        <td><img src="https://img-global.cpcdn.com/steps/7ba0861cc36249ff/160x128cq70/foto-del-paso-2-de-la-receta-pollo-al-spiedo.webp"></td>
+    </tr>
+    <tr>
+        <td>Paso: 3</td>
+        <td>Pasas el soporte del spiedo por el centro y atas fuertemente con un hilo las patas y las alas</td>
+        <td><img src="https://img-global.cpcdn.com/steps/52db3379607e3258/160x128cq70/foto-del-paso-3-de-la-receta-pollo-al-spiedo.webp"></td>
+    </tr>
+    <tr>
+        <td>Paso: 4</td>
+        <td>Yo usé el horno eléctrico más o menos para un pollo de 2 kilos lleva entre 45 minutos a una hora a 200 grados</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Paso: 5</td>
+        <td>A medida que va pasando el tiempo seguí pintando con el líquido para que se dore</td>
+        <td><img src="https://img-global.cpcdn.com/steps/def37540d1334407/160x128cq70/foto-del-paso-5-de-la-receta-pollo-al-spiedo.webp"></td>
+    </tr>
+    <tr>
+        <td>Paso: 6</td>
+        <td>Para aprovechar el horno puse a la media hora unas papas y batatas para acompañar, se doran perfectamente</td>
+    </tr>
+    <td>Paso: 7</td>
+        <td>A medida que va pasando el tiempo seguí pintando con el líquido para que Cuando esté listo va tener un dorado perfecto y se deshace al poncharlose dore</td>
+        <td><img src="https://img-global.cpcdn.com/steps/456b6c22295f7a84/160x128cq70/foto-del-paso-7-de-la-receta-pollo-al-spiedo.webp"></td>
+    </tr>
+</table>
+
+<!--https://cookpad.com/ar/recetas/13263727-pollo-al-spiedo-->
+</menu>
+<a name="contactos"></a>
+<p id="contactos">Mitre 274 - TE: 0336-445566 - CEL: 3364448811 - email: rotipollo@hotmail.com</p>
+</body>
+<footer>
+    <p id="piedepagina">Derechos Reservado @ 2021</p>
+
+</footer>
+</html>
