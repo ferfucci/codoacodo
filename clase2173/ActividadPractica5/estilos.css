@@ -21,99 +21,40 @@ header {
     font-family: 'Azeret Mono', monospace;
 }
 
-.logo img{
+.logo img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 10px;
-    height: 10px;
+    width: 200px;
     padding: 15px 20px 15px 20px;
     margin-left: 200px;
-
 }
-/* 
-a {
-    color:white;
+
+.menu {
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 200px;
+    font-weight: 700;
+}
+.menu ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0 0 0 130px;
+}
+.menu li {
+    float: left;
+    list-style: none;
+}
+.menu a {
+    margin-left: 20px;
+    line-height: 70px;
+    text-align: right;
     text-decoration: none;
-    background-color: gray;
-    margin:2px;   
-    border-radius: 5px;
-    font-size: 15px;
-    padding: 5px;
-
+    color: black;
 }
 
-.icono {
-    background-color: black;
-    font-size: 1.5vw;
-    text-align: center;
+.menu a:hover{
+    color: blue;
 }
-
-.icono:hover {
-    color: gray;
-}
-#boton-receta {
-    margin-left: 40px;
-    
-}
-
-#titulo {
-    font-size: 40px;
-    color: white;
-    text-align: center;
-    background-color: black;
-    font-family: 'Azeret Mono', monospace;
-}
-
-span{
-    font-style: italic;
-    font-family: cursive;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 25px;
-    font-style: italic;
-}
-
-h3 {
-    font-size: 15;
-    margin: 25px;
-}
-
-footer{
-    background-color: black;
-    padding: 10px;
-    text-align: center;
-    color: white;
-    text-align: center;
-    font-size: 15px;
-    
-    
-}
-
-#contactos{
-    color: red;
-    text-align: center;
-    font-weight: bold;
-}
-td{
-    text-align: center;
-}
-
-.sucursales{
-    background-color: white;
-    color: steelblue;
-}
-
-iframe {
-    margin: 5px;
-}
-#piedepagina{
-    margin-bottom: 1px;
-    font-size: 10px;
-    font-weight: lighter;
-}
-p {
-    font-weight: bold
-} */
