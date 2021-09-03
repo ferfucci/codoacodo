@@ -25,17 +25,17 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 200px;
-    padding: 15px 20px 15px 20px;
-    margin-left: 200px;
+    width: 100px;
+    padding: 1px 5px;
+    margin-left: 50px;
+    
 }
 
 .menu {
-    overflow: auto;
     position: absolute;
     top: 0;
     right: 0;
-    margin-right: 200px;
+    margin-right: 50px;
     font-weight: 700;
 }
 .menu ul {
@@ -53,6 +53,7 @@ header {
     text-align: right;
     text-decoration: none;
     color: black;
+    
 }
 
 .menu a:hover{
