@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,8 +25,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 90px;
-    height: 65px;
+    width: 100px;
     padding: 1px 5px;
     margin-left: 50px;
     
@@ -54,69 +53,9 @@ header {
     text-align: right;
     text-decoration: none;
     color: black;
+    
 }
 
 .menu a:hover{
     color: blue;
-}
-
-.menu i{
-    margin-top: 25px;
-    margin-left: 20px;
-    size: 18px;
-}
-
-.slider{
-    z-index: 10;
-    position: relative;
-    top: 100px;
-    left: 0px;
-    width: 100%;
-    height: 700px;
-    background: darkorange;
-    text-align: center;
-    padding-top: calc(50%-650px);
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);;
-    
-}
-.titulo1 {
-    font-size: 84px;
-    font-weight: 700;
-    color: darkred;
-}
-.ola {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-footer {
-    text-align: center;
-    font-size: 16px;
-    color: black;
-    height: 60px;
-    line-height: 60px;
-    position: relative;
-    margin-bottom: 0px;
-    background-color: lightpink;
-}
-.boton a{
-    text-decoration: none;
-    padding: 15px 40px;
-    font-size: 18px;
-    background-color: rgb(192, 146, 20);
-    margin: auto;
-    border-radius: 4px;
-    text-transform: uppercase;
-}
-h3 {
-    text-align: center;
-    font-weight: bold;
-}
-.receta {
-    text-align: center;
-}
-p {
-    text-align: center;
 }
