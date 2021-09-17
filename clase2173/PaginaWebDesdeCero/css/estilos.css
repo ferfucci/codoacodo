@@ -369,15 +369,13 @@ footer{
         align-items: center;
     }
 
-
-
     .textos-header h1 {
-        font-size: 35px;
+        font-size: 35px
     }
 
     .textos-header h2 {
+        font-size: 35px;
     }
-
     /* ABOUT US */
 
     .imagen-about-us {
@@ -401,12 +399,10 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        
     }
 
     .card {
         margin: 2px;
-        
     }
     
         .cards .card img {
@@ -431,7 +427,7 @@ footer{
         border: none;
     }
 
-    .content-foo p4{
+    .content-foo p{
         border: 1px solid #f2f2f2;
         color: #ccc;
         padding-bottom: 30px;
@@ -439,4 +435,5 @@ footer{
 
     .titulo-final{
         font-size: 20px;
+    }
     }
