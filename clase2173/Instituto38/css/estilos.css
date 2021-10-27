@@ -1,0 +1,829 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Yanone+Kaffeesatz:wght@300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+/*------Estilos Ventana Modal y Animación------------*/
+#logo {
+    width: 10vh;
+    margin: auto;
+    top: 10px;
+    
+    
+}
+
+#qr {
+    margin: auto;
+}
+
+.modal{
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.8);
+    
+    
+    top: 0;
+    left: 0;
+    
+    display: flex;
+    position: absolute;
+    
+
+    animation: modal 2s 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#requisitos {
+    font-size: 40px;
+    text-align: center;
+}
+.contenido {
+    margin: auto;
+    width: 40%;
+    height: 100%;
+    background: rgb(201, 197, 197);
+    border-radius: 10px;
+    
+    overflow-y: auto;
+}
+span{
+    color: blue;
+}
+.contenido2 {
+    margin: 10px;
+}
+
+#cerrar{
+    display: none;
+}
+
+#cerrar + label {
+    text-align: center;
+    position: fixed;
+    color: #fff;
+    font-size: 25px;
+    z-index: 50;
+    background: darkred;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    right: 10px;
+    cursor: pointer;
+
+    animation: modal 2s 1s;
+    animation-fill-mode: forwards;
+    
+    visibility: hidden;
+    opacity: 0;
+}
+
+#cerrar:checked + label, #cerrar:checked ~ .modal{
+    display: none;
+}
+
+
+
+@keyframes modal {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+/*---------------Index------------------*/
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    background: lightsalmon;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1.5px;
+    
+}
+.carreras{
+    font-size: 50px;
+    text-align: center;
+    color: #fb1919;
+}
+
+.section__titulos {
+    text-align: center;
+    font-size: 40px;
+    color: #fb1919;
+}
+
+/*-------------Estilos del Header------------*/
+
+.header{
+    height: 60px;
+}
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner__img{
+    width: 100%;
+}
+.logo {
+    margin: 5px;
+    color: #fb1919;
+    font-size: 80px;
+    
+}
+
+.icon-menu {
+    margin: 5px;
+    color: #fb1919;
+    font-size: 80px;
+    position: fixed;
+    right: 0;
+    border:.5px solid salmon;
+}
+.banner__titulo{
+    color: #fb1919;
+    font-size: 60px;
+}
+
+.banner__txt {
+    color: #fb1919;
+    font-size: 40px;
+}
+
+.icon-menu {
+    display: block;
+    width:  40px;
+    height: 40px;
+    font-size: 30px;
+    background: #fb1919;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    margin-right: left;
+    cursor: pointer;
+    
+    
+}
+
+/*-------------Estilos del Menu------------*/
+
+.nav {
+    position: fixed;
+    top: 90px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.4s;
+    z-index: 12;
+    border:1.5px solid salmon;
+}
+
+.menu {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.menu__link {
+    display: block;
+    padding: 15px;
+    background:#fb1919 ;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu__link:hover, select {
+    background: white;
+    color: #fb1919;
+}
+
+.mostrar {
+    left: 0px;
+}
+
+/*-------------Estilos del Banner------------*/
+.banner {
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 20px;
+}
+
+.banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+.banner__txt{
+    display: none;
+}
+
+/*-----------Estilos del Carreras------------*/
+
+.info__columna{
+    background: #fb1919;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+    
+}
+
+/*--------Estilos del Comentarios------------*/
+/* .comentarios__columnas {
+    position: relative;
+    width: 100%;
+} */
+.logo-comentarios {
+    color: #fb1919;
+    margin-left: 10px;
+}
+.comentarios{
+    background: salmon;
+}
+.section__titulos{
+    color: #fff;
+    padding-top: 20px;
+}
+.comentarios__columnas {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+.comentarios__descripcion {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    background: rgba(3, 2, 2, 0.5);
+    width: 60%;
+    height: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    
+}
+
+.comentarios__titulos {
+    font-size: 20px;
+    margin: 5px 0;
+    
+}
+
+.comentarios__img {
+    margin-bottom: 10px;
+    object-fit: cover;
+    width: 50vh;
+    height: 50vh;
+    
+    
+}
+.testimonios{
+    position: absolute;
+	top: 0;
+	left: 0;
+	border-width: 10vh 100vw 0 0;
+	border-style: solid;
+	border-color: #fff;
+	z-index: 10;
+}
+
+/*-------------Estilos de las Sedes------------*/
+.sede, .anexo, .subsede {
+    
+    width: 33%;
+}
+.logosede {
+    font-size: 30px;
+    color: #fb1919;
+    margin-left: 20px;
+}
+.ubicacion{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+#direccion{
+    margin: 20px;
+}
+#sedes {
+    margin-left: 20px;
+    color: #fb1919;
+}
+
+
+/* footer */
+
+footer {
+    background: #fb1919;
+    padding: 60px 0;
+    color: black;
+    text-align: center;
+}
+
+.contenedor{
+    
+}
+
+.partFooter {
+    width: 100%;
+    text-align: center;
+}
+
+.partFooter h4 {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.partFooter a:hover {
+    color: #fff;
+}
+
+.social-media {
+    left: 0px;
+    text-align: right;
+    
+}
+
+.social-media i {
+    font-size: 20px;
+    display: inline-block;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+    text-decoration: none;
+    margin-left: 1px;
+    
+}
+
+.social-media i:hover {
+    color: #fff;
+    background-color: #fb1919;
+    border-color: #fff;
+}
+.line {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+/*--------Estilos Reponsive------------*/
+
+@media screen and (max-width: 1280px){
+    .modal{
+        width: 100vw;
+        overflow-y: auto;
+        font-size: 15px;
+    }
+    #requisitos {
+        font-size: 35px;
+    }
+    #requisitos2 {
+        font-size: 35px;
+    }    
+    .logo{
+        font-size: 50px;
+    }
+    .banner__titulo{
+        font-size: 35px;
+    }
+
+    .banner__txt {
+        display: block;
+        font-size: 20px;
+    }
+
+    .info__titulo {
+        font-size: 30px;
+    }
+
+    .info__txt {
+        font-size: 20px;
+    }
+    .section__titulos {
+        font-size: 30px;
+    }
+    .comentarios__txt {
+        font-size: 15px;
+    }
+
+    .contact-us {
+        font-size: 15px;
+    }
+
+    .comentarios__img {
+        margin-bottom: 12px;
+        width: 80vh;
+        height: 80vh;
+    }
+    .info__columna{
+        margin-bottom: 10px;
+    }
+/*---------sedes------------*/
+
+    .sede, .anexo, .subsede {
+        width: 32%;
+        height: 25vh;
+    }
+    #sedes {
+        font-size: 40px;
+}
+}
+
+
+@media screen and (max-width: 800px){
+    .modal{
+        width: 100vh;
+        overflow-y: auto;
+        font-size: 15px;
+    }
+    #requisitos {
+        font-size: 30px;
+    }
+    #requisitos2 {
+        font-size: 30px;
+    }    
+    .logo{
+        font-size: 35px;
+    }
+    .banner__titulo{
+        font-size: 35px;
+    }
+
+    .banner__txt {
+        display: block;
+        font-size: 20px;
+    }
+
+    .info__titulo {
+        font-size: 30px;
+    }
+
+    .info__txt {
+        font-size: 20px;
+    }
+    .section__titulos {
+        font-size: 30px;
+    }
+    .comentarios__txt {
+        font-size: 15px;
+    }
+
+    .contact-us {
+        font-size: 15px;
+    }
+
+    .comentarios__img {
+        margin-bottom: 12px;
+        width: 70vh;
+        height: 70vh;
+    }
+    .info__columna{
+        margin-bottom: 10px;
+    }
+    /*---------sedes------------*/
+
+    .sede, .anexo, .subsede {
+        width: 32%;
+        height: 25vh;
+    }
+
+    #sedes{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 725px){
+    .modal{
+        width: 90vh;
+        overflow-y: auto;
+        font-size: 10px;
+    }
+    #requisitos {
+        font-size: 20px;
+    }
+    #requisitos2 {
+        font-size: 20px;
+    }    
+    .logo{
+        font-size: 30px;
+    }
+    .banner__titulo{
+        font-size: 35px;
+    }
+
+    .banner__txt {
+        display: block;
+        font-size: 20px;
+    }
+
+    .carreras {
+        font-size: 40px;
+    }
+
+    .info__titulo {
+        font-size: 25px;
+    }
+
+    .info__txt {
+        font-size: 15px;
+    }
+    .section__titulos {
+        font-size: 30px;
+    }
+    .comentarios__txt {
+        font-size: 15px;
+    }
+
+    .contact-us {
+        font-size: 15px;
+    }
+
+    .comentarios__img {
+        margin-bottom: 10px;
+        width: 60vh;
+        height: 60vh;
+}
+    .info__columna{
+        margin-bottom: 10px;
+    }
+    /*---------sedes------------*/
+
+    .sede, .anexo, .subsede {
+        width: 32%;
+        height: 25vh;
+    }
+
+    #direccion {
+        font-size: 20px;
+}
+    #sedes {
+        font-size: 30px;
+}
+}
+
+@media screen and (max-width: 655px){
+    .modal{
+        width: 80vh;
+        overflow-y: auto;
+        font-size: 10px;
+    }
+    #requisitos {
+        font-size: 15px;
+    }
+    #requisitos2 {
+        font-size: 15px;
+    }    
+        .logo{
+            font-size: 25px;
+        }
+        .banner__titulo{
+            font-size: 35px;
+        }
+    
+        .banner__txt {
+            display: block;
+            font-size: 20px;
+        }
+
+        .carreras {
+            font-size: 35px;
+        }
+    
+        .info__titulo {
+            font-size: 25px;
+        }
+    
+        .info__txt {
+            font-size: 15px;
+        }
+        .section__titulos {
+            font-size: 30px;
+        }
+        .comentarios__txt {
+            font-size: 15px;
+        }
+    
+        .contact-us {
+            font-size: 15px;
+        }
+    
+        .comentarios__img {
+            margin-bottom: 8px;
+            width: 50vh;
+            height: 50vh;
+    }
+        .info__columna{
+            margin-bottom: 10px;
+        }
+
+        /*---------sedes------------*/
+
+        .sede, .anexo, .subsede {
+            width: 32%;
+            height: 25vh;
+        }
+
+        #direccion {
+            font-size: 15px;
+        }
+        #sedes {
+            font-size: 25px;
+        }
+}
+
+@media screen and (max-width: 480px){
+    .modal{
+        width: 60vh;
+        overflow-y: auto;
+        font-size: 10px;
+    }
+    #requisitos {
+        font-size: 15px;
+    }
+    #requisitos2 {
+        font-size: 15px;
+    }    
+
+    .logo{
+        font-size: 20px;
+    }
+    .banner__titulo{
+        font-size: 20px;
+    }
+
+    .banner__txt {
+        display: block;
+        font-size: 15px;
+    }
+
+    .info__titulo {
+        font-size: 15px;
+    }
+
+    .info__txt {
+        font-size: 12px;
+    }
+
+    .carreras{
+        font-size: 30px;
+    }
+    .section__titulos {
+        font-size: 30px;
+    }
+    .comentarios__txt {
+        font-size: 15px;
+    }
+
+    .contact-us {
+        font-size: 15px;
+    }
+
+    .comentarios__img {
+        margin-bottom: 5px;
+        width: 40vh;
+        height: 40vh;
+}
+    .info__columna{
+        margin-bottom: 10px;
+    }
+    /*---------sedes------------*/
+
+    .sede, .anexo, .subsede {
+        width: 32%;
+        height: 25vh;
+    }
+
+    #direccion {
+        font-size: 12px;
+    }
+    #sedes {
+        font-size: 20px;
+    }
+
+
+
+}
+
+
+@media all and (max-width: 400px){
+    .modal{
+        width: 50vh;
+        overflow-y: auto;
+        font-size: 10px;
+    }
+    #requisitos {
+        font-size: 12px;
+    }
+    #requisitos2 {
+        font-size: 12px;
+    }    
+    
+    .contenido{
+        font-size: 10px;
+    }
+    .carreras{
+        font-size: 20px;
+    }
+    
+    .logo{
+        font-size: 10px;
+    }
+    .banner__titulo{
+        font-size: 15px;
+    }
+
+    .banner__txt {
+        display: block;
+        font-size: 12px;
+    }
+
+    .info__titulo {
+        font-size: 15px;
+    }
+
+    .info__txt {
+        font-size: 10px;
+    }
+    .section__titulos {
+        font-size: 20px;
+    }
+    .comentarios__txt {
+        font-size: 10px;
+    }
+
+    .contact-us {
+        font-size: 10px;
+    }
+
+    .comentarios__img {
+        margin-bottom: 5px;
+        width: 30vh;
+        height: 30vh;
+}
+    .info__columna{
+        margin-bottom: 5px;
+    }
+
+    
+
+	/*---------sedes------------*/
+
+    .sede, .anexo, .subsede {
+        width: 32%;
+        height: 25vh;
+    }
+    #sedes {
+        font-size: 15px;
+    }
+
+    #direccion {
+        font-size: 10px;
+    }
+
+    .logo{
+        font-size: 15px;
+    }
+}
+
